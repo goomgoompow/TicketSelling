@@ -17,7 +17,9 @@ public class TicketSeller{
             ticketOffice.plusAmount(ticket.getFee());
         }
         audience.getBag().setTicket(ticket);*/
-        ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
+
+        //ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
+        ticketOffice.sellTicketTo(audience);
 
     }
 
