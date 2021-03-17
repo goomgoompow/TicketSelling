@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public abstract class DiscountPolicy {
-    private List<DiscountCondition> conditions = new ArrayList<>();
+public interface DiscountPolicy {
+    /*private List<DiscountCondition> conditions = new ArrayList<>();
 
     public DiscountPolicy(DiscountCondition... conditions) {
         this.conditions = Arrays.asList(conditions);
@@ -24,5 +24,6 @@ public abstract class DiscountPolicy {
         return Money.ZERO;
     }
 
-    protected abstract Money getDiscountAmount(Screening screening);
+    protected abstract Money getDiscountAmount(Screening screening);*/
+    Money calculateDiscountAmount(Screening screening);
 }

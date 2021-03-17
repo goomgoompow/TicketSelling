@@ -4,7 +4,7 @@ import com.object.reservation.Money;
 import com.object.reservation.Screening;
 import com.object.reservation.condition.DiscountCondition;
 
-public class AmountDiscountPolicy extends DiscountPolicy {
+public class AmountDiscountPolicy extends DefaultDiscountPolicy {
 
     private Money discountAmount;
 
